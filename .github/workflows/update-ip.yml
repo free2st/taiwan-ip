@@ -1,0 +1,32 @@
+name: Update Taiwan IP RSC
+
+on:
+  schedule:
+    - cron: '0 2 1 * *' # 每月 1 號凌晨 02:00 自動執行
+  workflow_dispatch: # 支援手動按鈕觸發
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Fetch APNIC Data & Generate RSC
+        run: |
+          echo "# Generated from APNIC Official Data" > tw_ipv4.rsc
+          echo "/ip firewall address-list" >> tw_ipv4.rsc
+          curl -s https://ftp.apnic.net/stats/apnic/delegated-apnic-latest | \
+          grep 'apnic|TW|ipv4' | \
+          awk -F'|' '{printf "add list=tw_ipv4 address=%s/%d comment=TW\n", $4, 32-log($5)/log(2)}' >> tw_ipv4.rsc
+
+      - name: Commit and Push
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add tw_ipv4.rsc
+          git commit -m "Auto update tw_ipv4.rsc" || exit 0
+          git push
