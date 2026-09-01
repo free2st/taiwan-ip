@@ -30,6 +30,7 @@ add list=tw_ipv4 address=43.240.108.0/22 comment=TW
 add list=tw_ipv4 address=43.240.152.0/22 comment=TW
 add list=tw_ipv4 address=43.241.32.0/22 comment=TW
 add list=tw_ipv4 address=43.241.160.0/22 comment=TW
+add list=tw_ipv4 address=43.242.6.0/23 comment=TW
 add list=tw_ipv4 address=43.243.252.0/22 comment=TW
 add list=tw_ipv4 address=43.246.216.0/22 comment=TW
 add list=tw_ipv4 address=43.248.16.0/22 comment=TW
@@ -150,7 +151,8 @@ add list=tw_ipv4 address=103.20.98.0/23 comment=TW
 add list=tw_ipv4 address=103.20.176.0/22 comment=TW
 add list=tw_ipv4 address=103.21.60.0/22 comment=TW
 add list=tw_ipv4 address=103.22.212.0/22 comment=TW
-add list=tw_ipv4 address=103.23.108.0/22 comment=TW
+add list=tw_ipv4 address=103.23.108.0/23 comment=TW
+add list=tw_ipv4 address=103.23.110.0/23 comment=TW
 add list=tw_ipv4 address=103.24.54.0/23 comment=TW
 add list=tw_ipv4 address=103.25.232.0/22 comment=TW
 add list=tw_ipv4 address=103.25.236.0/22 comment=TW
@@ -235,7 +237,8 @@ add list=tw_ipv4 address=103.124.72.0/22 comment=TW
 add list=tw_ipv4 address=103.124.148.0/22 comment=TW
 add list=tw_ipv4 address=103.124.176.0/22 comment=TW
 add list=tw_ipv4 address=103.124.252.0/22 comment=TW
-add list=tw_ipv4 address=103.125.64.0/22 comment=TW
+add list=tw_ipv4 address=103.125.64.0/23 comment=TW
+add list=tw_ipv4 address=103.125.66.0/23 comment=TW
 add list=tw_ipv4 address=103.125.224.0/22 comment=TW
 add list=tw_ipv4 address=103.125.228.0/22 comment=TW
 add list=tw_ipv4 address=103.126.88.0/22 comment=TW
@@ -371,7 +374,6 @@ add list=tw_ipv4 address=103.183.154.0/23 comment=TW
 add list=tw_ipv4 address=103.183.198.0/23 comment=TW
 add list=tw_ipv4 address=103.185.28.0/23 comment=TW
 add list=tw_ipv4 address=103.186.118.0/23 comment=TW
-add list=tw_ipv4 address=103.186.142.0/23 comment=TW
 add list=tw_ipv4 address=103.186.186.0/23 comment=TW
 add list=tw_ipv4 address=103.188.120.0/23 comment=TW
 add list=tw_ipv4 address=103.189.108.0/23 comment=TW
@@ -613,6 +615,7 @@ add list=tw_ipv4 address=160.191.4.0/23 comment=TW
 add list=tw_ipv4 address=160.191.8.0/23 comment=TW
 add list=tw_ipv4 address=160.191.168.0/23 comment=TW
 add list=tw_ipv4 address=160.191.202.0/23 comment=TW
+add list=tw_ipv4 address=160.236.254.0/23 comment=TW
 add list=tw_ipv4 address=160.250.98.0/23 comment=TW
 add list=tw_ipv4 address=161.248.44.0/23 comment=TW
 add list=tw_ipv4 address=161.248.128.0/23 comment=TW
@@ -627,6 +630,7 @@ add list=tw_ipv4 address=163.13.0.0/16 comment=TW
 add list=tw_ipv4 address=163.14.0.0/15 comment=TW
 add list=tw_ipv4 address=163.16.0.0/12 comment=TW
 add list=tw_ipv4 address=163.32.0.0/16 comment=TW
+add list=tw_ipv4 address=163.52.48.0/23 comment=TW
 add list=tw_ipv4 address=163.61.60.0/23 comment=TW
 add list=tw_ipv4 address=163.61.124.0/23 comment=TW
 add list=tw_ipv4 address=163.61.184.0/23 comment=TW
